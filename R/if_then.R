@@ -1,4 +1,4 @@
-#' If x is null/empty/NA then y otherwise x
+#' If x is NULL / empty / NA then y otherwise x
 #'
 #' @param x original.
 #' @param y alternative
@@ -66,7 +66,7 @@ is_na <- rlang:::is_na
 #' @rdname if_then
 #' @export
 `%na%` <- function(x, y){
-  if (is.na(x)) {
+  if (is_na(x)) {
     y
   } else {
     x
@@ -78,4 +78,24 @@ is_na <- rlang:::is_na
 if_na <- Vectorize(`%na%`)
 
 
+# NaN ----
 
+#'
+#'
+#' @rdname if_then
+#' @export
+is_nan <- is.nan
+#'
+#' @rdname if_then
+#' @export
+`%NaN%` <- function(x, y){
+  if (is_nan(x)) {
+    y
+  } else {
+    x
+  }
+}
+#'
+#' @rdname if_then
+#' @export
+if_nan <- Vectorize(`%NaN%`)
