@@ -9,6 +9,8 @@
 #' @name if_then
 NULL
 #'
+#'
+#' NULL ----
 #' @rdname if_then
 #' @export
 `%||%` <- function(x, y) {
@@ -18,19 +20,31 @@ NULL
     x
   }
 }
-if_null <- Vectorize(`%||%`)
 
 #' @rdname if_then
 #' @export
-`%|0|%` <- function(x, y) {
+if_null <- Vectorize(`%||%`)
+
+
+#' empty ----
+#'
+#' @rdname if_then
+#' @export
+`%0%` <- function(x, y) {
   if (!length(x)) {
     y
   } else {
     x
   }
 }
-if_empty <- Vectorize(`%|0|%`)
 
+#' @rdname if_then
+#' @export
+if_empty <- Vectorize(`%0%`)
+
+
+#' NA ----
+#'
 #' @rdname if_then
 #' @export
 `%na%` <- function(x, y){
@@ -40,4 +54,7 @@ if_empty <- Vectorize(`%|0|%`)
     x
   }
 }
+
+#' @rdname if_then
+#' @export
 if_na <- Vectorize(`%na%`)
