@@ -1,4 +1,4 @@
-#' If x is null/empty/NA then y otherwise x
+If x is null/empty/NA then y otherwise x
 #'
 #' @param x original.
 #' @param y alternative
@@ -26,6 +26,11 @@ NULL
 if_null <- Vectorize(`%||%`)
 
 
+#' @rdname if_then
+#' @export
+is_null <- rlang:::is_null
+
+
 #' empty ----
 #'
 #' @rdname if_then
@@ -43,6 +48,10 @@ if_null <- Vectorize(`%||%`)
 if_empty <- Vectorize(`%0%`)
 
 
+#' @rdname if_then
+#' @export
+is_empty <- rlang:::is_empty
+
 #' NA ----
 #'
 #' @rdname if_then
@@ -58,3 +67,8 @@ if_empty <- Vectorize(`%0%`)
 #' @rdname if_then
 #' @export
 if_na <- Vectorize(`%na%`)
+
+
+#' @rdname if_then
+#' @export
+is_na <- rlang:::is_na
