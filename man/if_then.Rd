@@ -2,21 +2,30 @@
 % Please edit documentation in R/if_then.R
 \name{if_then}
 \alias{if_then}
+\alias{is_null}
 \alias{\%||\%}
 \alias{if_null}
+\alias{is_empty}
 \alias{\%0\%}
 \alias{if_empty}
+\alias{is_na}
 \alias{\%na\%}
 \alias{if_na}
 \title{If x is null/empty/NA then y otherwise x}
 \usage{
+is_null()
+
 x \%||\% y
 
 if_null(x, y)
 
+is_empty(x)
+
 x \%0\% y
 
 if_empty(x, y)
+
+is_na(x)
 
 x \%na\% y
 
