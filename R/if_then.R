@@ -10,7 +10,9 @@
 NULL
 #'
 #'
-#' NULL ----
+
+# NULL ----
+
 #'
 #' @rdname if_then
 #' @export
@@ -31,7 +33,8 @@ is_null <- rlang:::is_null
 if_null <- Vectorize(`%||%`)
 
 
-#' empty ----
+# empty ----
+
 #'
 #' @rdname if_then
 #' @export
@@ -52,7 +55,8 @@ is_empty <- rlang:::is_empty
 if_empty <- Vectorize(`%0%`)
 
 
-#' NA ----
+# NA ----
+
 #'
 #'
 #' @rdname if_then

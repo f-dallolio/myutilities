@@ -41,10 +41,4 @@ x or y.
 }
 \description{
 If x is null/empty/NA then y otherwise x
-
-NULL ----
-
-empty ----
-
-NA ----
 }
