@@ -11,7 +11,10 @@
 \alias{is_na}
 \alias{\%na\%}
 \alias{if_na}
-\title{If x is null/empty/NA then y otherwise x}
+\alias{is_nan}
+\alias{\%NaN\%}
+\alias{if_nan}
+\title{If x is NULL / empty / NA then y otherwise x}
 \usage{
 is_null()
 
@@ -30,6 +33,12 @@ is_na(x)
 x \%na\% y
 
 if_na(x, y)
+
+is_nan()
+
+x \%NaN\% y
+
+if_nan(x, y)
 }
 \arguments{
 \item{x}{original.}
@@ -40,5 +49,5 @@ if_na(x, y)
 x or y.
 }
 \description{
-If x is null/empty/NA then y otherwise x
+If x is NULL / empty / NA then y otherwise x
 }
