@@ -16,10 +16,12 @@ URL: https://github.com/f-dallolio/myutilities
 BugReports: https://github.com/f-dallolio/myutilities/issues
 Depends: 
     arrow,
+    data.table,
     dbplyr,
     dplyr,
     dtplyr,
     forcats,
+    fs,
     ggplot2,
     hms,
     purrr,
