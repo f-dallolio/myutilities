@@ -36,3 +36,7 @@ Depends:
     tidyr,
     tsibble,
     vctrs
+Imports: 
+    adtabler (>= 0.0.0.9000)
+Remotes:  
+    f-dallolio/adtabler
