@@ -36,6 +36,7 @@ Depends:
     tibble,
     tidyr,
     tsibble,
-    vctrs
+    vctrs,
+    zeallot
 Remotes: 
     f-dallolio/adtabler
