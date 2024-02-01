@@ -17,3 +17,6 @@ empty_named_list <- function(...){
 empty_named_df <- function(...){
   empty_named_list(...) |> as.data.frame()
 }
+empty_class_list <- function(.classes, ...){
+  ??Dates
+}
