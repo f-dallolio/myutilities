@@ -3,6 +3,7 @@
 \name{string_helpers}
 \alias{string_helpers}
 \alias{no_case}
+\alias{path_modify}
 \title{String helpers}
 \usage{
 no_case(
@@ -13,6 +14,8 @@ no_case(
   dotall = FALSE,
   ...
 )
+
+path_modify(path, fn = to_snake_case)
 }
 \arguments{
 \item{pattern}{pattern.}

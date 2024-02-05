@@ -1,4 +1,4 @@
-# Empty Vectors from character class definition
+#' Empty Vectors from character class definition
 #'
 #' @param x string with class name.
 #'
