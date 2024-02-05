@@ -11,15 +11,15 @@ NULL
 #' @export
 m_assign <- function(x, value, env = .GlobalEnv) {
   tryCatch(zeallot:::multi_assign(substitute(x), value, env),
-           invalid_lhs = function(e) {
-             stop("invalid `%<-%` left-hand side, ", e$message,
-                  call. = FALSE
-             )
-           }, invalid_rhs = function(e) {
-             stop("invalid `%<-%` right-hand side, ", e$message,
-                  call. = FALSE
-             )
-           }
+    invalid_lhs = function(e) {
+      stop("invalid `%<-%` left-hand side, ", e$message,
+        call. = FALSE
+      )
+    }, invalid_rhs = function(e) {
+      stop("invalid `%<-%` right-hand side, ", e$message,
+        call. = FALSE
+      )
+    }
   )
 }
 #'

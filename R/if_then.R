@@ -65,7 +65,7 @@ is_na <- rlang:::is_na
 #'
 #' @rdname if_then
 #' @export
-`%na%` <- function(x, y){
+`%na%` <- function(x, y) {
   if (is_na(x)) {
     y
   } else {
@@ -88,7 +88,7 @@ is_nan <- is.nan
 #'
 #' @rdname if_then
 #' @export
-`%NaN%` <- function(x, y){
+`%NaN%` <- function(x, y) {
   if (is_nan(x)) {
     y
   } else {

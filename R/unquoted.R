@@ -5,8 +5,7 @@
 #' @return a character vector.
 #' @export
 #'
-cc <- function(...){
+cc <- function(...) {
   dots <- enquos(..., .named = TRUE)
   names(dots)
 }
-
