@@ -5,7 +5,7 @@ push_pkg <- function() {
   devtools::document()
   devtools::load_all()
   devtools::install()
-  message(glue::glue(
+  print(glue::glue(
       '
 
       { read.table("~/Documents/pkg_dev/p620")[[1]] }
