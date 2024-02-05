@@ -8,7 +8,7 @@ push_pkg <- function() {
   message(glue::glue(
       '
 
-      { read.table("~/Documents/pkg_dev/p620")[[1]]) }
+      { read.table("~/Documents/pkg_dev/p620")[[1]] }
 
       '
   ))
