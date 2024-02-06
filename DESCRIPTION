@@ -37,6 +37,7 @@ Depends:
     tidyr,
     tsibble,
     vctrs,
-    zeallot
+    zeallot,
+    zip
 Remotes: 
     f-dallolio/adtabler
